@@ -1,4 +1,4 @@
-a = [5, -5, 7, 11, -2, 11, 10]
+a = [-1,1,0,2,3]
 
 # create hash
 # key is sum of 2 integers; value is those 2 integers
@@ -14,8 +14,7 @@ def threesome_adv(input_array)
 			if not sum_hash.keys.include?(sumTwoElem) # check for duplicates in hash keys
 				sum_hash[sumTwoElem] = [] # create the key
 			end
-			sum_hash[sumTwoElem] << index1 # append index1
-			sum_hash[sumTwoElem] << index2 # append index2
+			sum_hash[sumTwoElem] << [index1, index2] # append indices
 		end
 	end
 
